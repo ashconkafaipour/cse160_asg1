@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Artbook by Ashcon Kafaipour</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <br>
+    CLEAR CANVAS:
+    <br>
+    <button type="button" id="clearButton">Clear</button>
+    <br><br>
+
+    SHAPES:
+    <br>
+    <button type="button" id="squares">Squares</button>
+    <button type="button" id="triangles">Triangles</button>
+    <button type="button" id="circles">Circle</button>    
+
+    <br> <br> <br>
+    <button type="button" id="showArt">Generate Art</button>
+    <br> <br>
+
+    <p>
+    Red <input type="range" min="0" max="100" value="100" class="slider" id="redSlide" oninput="this.nextElementSibling.value = this.value"/>
+    <output>100</output>
+    <p>
+    Green <input type="range" min="0" max="100" value="100" class="slider" id="greenSlide" oninput="this.nextElementSibling.value = this.value"/>
+    <output>100</output>
+    <p>
+    Blue <input type="range" min="0" max="100" value="100" class="slider" id="blueSlide" oninput="this.nextElementSibling.value = this.value"/>
+    <output>100</output>
+
+    </p>
+
+    <p>
+    Size <input type="range" min="5" max="100" value="0" class="slider" id="sizeSlide" oninput="this.nextElementSibling.value = this.value"/>
+    <output>5</output>
+
+    <p>
+    Segments <input type="range" min="5" max="100" value="5" class="slider" id="segmentSlide" oninput="this.nextElementSibling.value = this.value"/>
+    <output>5</output>
+    
+    <p>
+    Opacity <input type="range" min="0" max="100" value="100" class="slider" id="opacitySlide" oninput="this.nextElementSibling.value = this.value"/>
+    <output>100</output>
+    </p>
+
+    <br><br>
+
+
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <img src="lib/asg1 graph.jpg" width="400" height="400">
+    <img src="lib/asg1 colored.jpg" width="400" height="400">
+    <script src="asg1.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+  </body>
+</html>
